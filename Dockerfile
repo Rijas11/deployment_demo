@@ -4,6 +4,7 @@ RUN mkdir nikhil
 RUN chmod 777 /nikhil
 RUN cd nikhil
 WORKDIR /nikhil
+RUN pwd
 RUN mkdir test
 RUN chmod 777 nikhil/test
 ADD /deployment_application/target/my-deployment.jar docker-test-demo.jar /nikhil/test
